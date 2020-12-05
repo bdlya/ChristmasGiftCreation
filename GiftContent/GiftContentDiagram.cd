@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GiftContent.Products.Characteristics.ExpirationDate">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAgAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Products\Characteristics\ExpirationDate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GiftContent.Products.Characteristics.NutritionalValue">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAEQAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Characteristics\NutritionalValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GiftContent.Products.Confections.CandyBar">
+    <Position X="7" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAAAgAAAAAAAAAAACAAAAAAAAABA=</HashCode>
+      <FileName>Products\Confections\CandyBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GiftContent.Products.Confections.Chocolate">
+    <Position X="11.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAgAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Products\Confections\Chocolate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GiftContent.Products.Confections.ConfectioneryProduct">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAgAAYAQCAAAAAACAAABAAAAAA=</HashCode>
+      <FileName>Products\Confections\ConfectioneryProduct.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GiftContent.Products.Confections.Lollipop">
+    <Position X="4.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAgAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Products\Confections\Lollipop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GiftContent.Products.Confections.Waffle">
+    <Position X="9.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAEAAAgAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Confections\Waffle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GiftContent.Builders.ConfectionBuilders.CandyBarBuilder">
+    <Position X="4" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAIAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\ConfectionBuilders\CandyBarBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GiftContent.Builders.ConfectionBuilders.ChocolateBuilder">
+    <Position X="8" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\ConfectionBuilders\ChocolateBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GiftContent.Builders.ConfectionBuilders.ConfectionBuilder">
+    <Position X="7" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABAAIAAAAAAAAABBAAAAgAAAAAAgAAAAIAAQAAAAAA=</HashCode>
+      <FileName>Builders\ConfectionBuilders\ConfectionBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GiftContent.Builders.ConfectionBuilders.LollipopBuilder">
+    <Position X="6" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\ConfectionBuilders\LollipopBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GiftContent.Builders.ConfectionBuilders.WaffleBuilder">
+    <Position X="10" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\ConfectionBuilders\WaffleBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GiftContent.Products.IProduct">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAYAQCAAAAAACAAABAAAAAA=</HashCode>
+      <FileName>Products\IProduct.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="GiftContent.Products.Confections.Characteristics.ChocolateType">
+    <Position X="13.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAAIA=</HashCode>
+      <FileName>Products\Confections\Characteristics\ChocolateType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="GiftContent.Products.Confections.Characteristics.LollipopType">
+    <Position X="15.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Confections\Characteristics\LollipopType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="GiftContent.Products.Confections.Characteristics.Nut">
+    <Position X="17.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAABAQAwAAJAAAAAAAEAAAAUAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Confections\Characteristics\Nut.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="GiftContent.Products.Confections.Characteristics.Size">
+    <Position X="13.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Products\Confections\Characteristics\Size.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="GiftContent.Products.Confections.Characteristics.WaffleType">
+    <Position X="15.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAIAQABCAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Products\Confections\Characteristics\WaffleType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

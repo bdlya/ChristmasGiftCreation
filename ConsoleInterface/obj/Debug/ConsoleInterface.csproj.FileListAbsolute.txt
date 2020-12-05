@@ -1,0 +1,7 @@
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\bin\Debug\ConsoleInterface.exe.config
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\bin\Debug\ConsoleInterface.exe
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\bin\Debug\ConsoleInterface.pdb
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\obj\Debug\ConsoleInterface.csprojAssemblyReference.cache
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\obj\Debug\ConsoleInterface.csproj.CoreCompileInputs.cache
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\obj\Debug\ConsoleInterface.exe
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\obj\Debug\ConsoleInterface.pdb
