@@ -19,6 +19,13 @@ namespace ConsoleInterface
 
             Console.WriteLine(standardChristmasGift.OrderByManufacturer());
 
+            Console.WriteLine("Enter sugar content range: ");
+            Console.Write("From: ");
+            int from = int.Parse(Console.ReadLine());
+            Console.Write("To: ");
+            int to = int.Parse(Console.ReadLine());
+            Console.WriteLine(standardChristmasGift.FindConfectionsBySugarContent(from, to));
+
             Console.ReadKey();
         }
     }

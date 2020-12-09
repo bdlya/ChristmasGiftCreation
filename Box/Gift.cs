@@ -25,6 +25,10 @@ namespace Box
 
         public Gift OrderByManufacturer() => new Gift(_confections.OrderBy(x => x.ManufacturerName).ToList());
 
+        public Gift FindConfectionsBySugarContent(int from, int to) => 
+            new Gift(_confections.Where(x => x.SugarContent >= from && x.SugarContent <= to).ToList());
+
+
         public override string ToString()
         {
             StringBuilder confections = new StringBuilder();
