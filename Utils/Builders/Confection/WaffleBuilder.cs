@@ -1,22 +1,21 @@
 ﻿using System.Resources;
-using GiftContent.Products.Confections;
-using GiftContent.Products.Confections.Characteristics;
+using Domain.Products.Confections;
+using Domain.Products.Confections.Characteristics;
 
-namespace GiftContent.Builders.ConfectionBuilders
+
+namespace Utils.Builders.Confection
 {
-    public class WaffleBuilder: ConfectionBuilder
+    public class WaffleBuilder: ConfectionBuilderBase<Waffle>
     {
-        public WaffleBuilder() => Confection = new Waffle();
-
         public WaffleBuilder SetTaste(string taste)
         {
-            ((Waffle) Confection).Taste = taste;
+            Confection.Taste = taste;
             return this;
         }
 
         public WaffleBuilder SetWaffleType(WaffleType waffleType)
         {
-            ((Waffle) Confection).WaffleType = waffleType;
+            Confection.WaffleType = waffleType;
             return this;
         }
     }

@@ -1,15 +1,13 @@
-﻿using GiftContent.Products.Confections;
-using GiftContent.Products.Confections.Characteristics;
+﻿using Domain.Products.Confections;
+using Domain.Products.Confections.Characteristics;
 
-namespace GiftContent.Builders.ConfectionBuilders
+namespace Utils.Builders.Confection
 {
-    public class LollipopBuilder: ConfectionBuilder
+    public class LollipopBuilder: ConfectionBuilderBase<Lollipop>
     {
-        public LollipopBuilder() => Confection = new Lollipop();
-
         public LollipopBuilder SetLollipopType(LollipopType lollipopType)
         {
-            ((Lollipop) Confection).LollipopType = lollipopType;
+            Confection.LollipopType = lollipopType;
             return this;
         }
     }

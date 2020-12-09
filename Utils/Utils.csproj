@@ -46,10 +46,16 @@
     <Compile Include="Builders\Box\UserGiftBuilder.cs" />
     <Compile Include="Builders\Confection\CandyBarBuilder.cs" />
     <Compile Include="Builders\Confection\ChocolateBuilder.cs" />
-    <Compile Include="Builders\Confection\ConfectionBuilder.cs" />
+    <Compile Include="Builders\Confection\ConfectionBuilderBase.cs" />
     <Compile Include="Builders\Confection\LollipopBuilder.cs" />
     <Compile Include="Builders\Confection\WaffleBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{1638d3e3-406c-438a-a1e1-4ef97654289c}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

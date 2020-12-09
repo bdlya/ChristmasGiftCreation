@@ -1,15 +1,13 @@
-﻿using GiftContent.Products.Confections;
-using GiftContent.Products.Confections.Characteristics;
+﻿using Domain.Products.Confections;
+using Domain.Products.Confections.Characteristics;
 
-namespace GiftContent.Builders.ConfectionBuilders
+namespace Utils.Builders.Confection
 {
-    public class ChocolateBuilder : ConfectionBuilder
+    public class ChocolateBuilder : ConfectionBuilderBase<Chocolate>
     {
-        public ChocolateBuilder() => Confection = new Chocolate();
-
         public ChocolateBuilder SetChocolateType(ChocolateType chocolateType)
         {
-            ((Chocolate) Confection).ChocolateType = chocolateType;
+            Confection.ChocolateType = chocolateType;
             return this;
         }
     }

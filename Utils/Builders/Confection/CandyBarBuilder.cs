@@ -1,27 +1,26 @@
-﻿using GiftContent.Products.Confections;
-using GiftContent.Products.Confections.Characteristics;
+﻿using Domain.Products.Confections;
+using Domain.Products.Confections.Characteristics;
 
-namespace GiftContent.Builders.ConfectionBuilders
+namespace Utils.Builders.Confection
 {
-    public class CandyBarBuilder : ConfectionBuilder
+    public class CandyBarBuilder : ConfectionBuilderBase<CandyBar>
     {
-        public CandyBarBuilder() => Confection = new CandyBar();
 
         public CandyBarBuilder SetGlazing(bool isGlazed)
         {
-            ((CandyBar) Confection).IsGlazed = isGlazed;
+            Confection.IsGlazed = isGlazed;
             return this;
         }
 
         public CandyBarBuilder SetNutType(Nut nutType)
         {
-            ((CandyBar) Confection).NutType = nutType;
+            Confection.NutType = nutType;
             return this;
         }
 
         public CandyBarBuilder SetSize(Size size)
         {
-            ((CandyBar) Confection).Size = size;
+            Confection.Size = size;
             return this;
         }
     }
