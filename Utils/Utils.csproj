@@ -41,9 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Builders\Box\GiftBuilder.cs" />
-    <Compile Include="Builders\Box\StandardGiftBuilder.cs" />
-    <Compile Include="Builders\Box\UserGiftBuilder.cs" />
+    <Compile Include="Builders\GiftBox\Creator.cs" />
+    <Compile Include="Builders\GiftBox\GiftBuilder.cs" />
+    <Compile Include="Builders\GiftBox\StandardGiftBuilder.cs" />
+    <Compile Include="Builders\GiftBox\UserGiftBuilder.cs" />
     <Compile Include="Builders\Confection\CandyBarBuilder.cs" />
     <Compile Include="Builders\Confection\ChocolateBuilder.cs" />
     <Compile Include="Builders\Confection\ConfectionBuilderBase.cs" />
@@ -52,6 +53,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Box\Box.csproj">
+      <Project>{9DB4B566-E5C5-422E-A7D3-8B39C17079BB}</Project>
+      <Name>Box</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{1638d3e3-406c-438a-a1e1-4ef97654289c}</Project>
       <Name>Domain</Name>

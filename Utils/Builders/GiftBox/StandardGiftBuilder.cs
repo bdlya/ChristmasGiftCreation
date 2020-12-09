@@ -1,4 +1,4 @@
-﻿namespace GiftBox.Builders
+﻿namespace Utils.Builders.GiftBox
 {
     public class StandardGiftBuilder : GiftBuilder
     {

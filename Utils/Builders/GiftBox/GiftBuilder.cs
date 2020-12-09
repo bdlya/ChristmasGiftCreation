@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
-using GiftBox.Box;
-using GiftContent.Products;
+using Box;
+using Domain.Products.Confections;
 
-namespace GiftBox.Builders
+namespace Utils.Builders.GiftBox
 {
     public abstract class GiftBuilder
     {
         public Gift Gift { get; }
 
-        public GiftBuilder() => Gift = new Gift(new List<IProduct>());
+        public GiftBuilder() => Gift = new Gift(new List<ConfectioneryProductBase>());
 
         public abstract void AddCandyBar();
         public abstract void AddWaffle();

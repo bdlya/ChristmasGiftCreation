@@ -1,6 +1,6 @@
-﻿using GiftBox.Box;
+﻿using Box;
 
-namespace GiftBox.Builders
+namespace Utils.Builders.GiftBox
 {
     public class Creator
     {

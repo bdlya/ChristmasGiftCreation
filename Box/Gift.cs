@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Text;
-using GiftContent.Products;
+using Domain.Products.Confections;
 
-namespace GiftBox.Box
+namespace Box
 {
     public class Gift
     {
-        public ICollection<IProduct> Confections { get; }
+        public ICollection<ConfectioneryProductBase> Confections { get; }
 
-        public Gift(ICollection<IProduct> collection) => Confections = collection;
+        public Gift(ICollection<ConfectioneryProductBase> collection) => Confections = collection;
 
-        public void Add(IProduct confection) => Confections.Add(confection);
+        public void Add(ConfectioneryProductBase confection) => Confections.Add(confection);
 
         public override string ToString()
         {
