@@ -15,6 +15,8 @@ namespace ConsoleInterface
             Gift standardChristmasGift = new Creator().CreateGift(new StandardGiftBuilder());
             Console.WriteLine(standardChristmasGift);
 
+            Console.WriteLine($"Total weight: {standardChristmasGift.CountWeight()}");
+
             Console.ReadKey();
         }
     }

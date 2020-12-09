@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Domain.Products.Confections;
 
@@ -18,6 +19,9 @@ namespace Box
             foreach (var confection in confections)
                 Add(confection);
         }
+
+        public double CountWeight() => Confections.Sum(x => x.Weight);
+       
 
 
         public override string ToString()
