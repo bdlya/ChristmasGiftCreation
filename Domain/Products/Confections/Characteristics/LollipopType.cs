@@ -1,4 +1,4 @@
-﻿namespace GiftContent.Products.Confections.Characteristics
+﻿namespace Domain.Products.Confections.Characteristics
 {
     public enum LollipopType
     {

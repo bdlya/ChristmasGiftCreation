@@ -1,10 +1,9 @@
-﻿using GiftContent.Builders.ConfectionBuilders;
-using GiftContent.Products.Characteristics;
+﻿using Domain.Products.Characteristics;
+using System;
 
-namespace GiftContent.Products.Confections
-
+namespace Domain.Products.Confections
 {
-    public class ConfectioneryProduct : IProduct
+    public abstract class ConfectioneryProductBase
     {
         public string Name { get; set; }
         public string ManufacturerName { get; set; }
@@ -15,13 +14,11 @@ namespace GiftContent.Products.Confections
         public int PricePerKilogram { get; set; }
 
         public NutritionalValue NutritionalValue { get; set; }
-        public ExpirationDate ExpirationDate { get; set; }
 
-        public static ConfectionBuilder CreateBuilder() => new ConfectionBuilder();
+        public DateTime StartDate { get; set; }
 
-        public override string ToString() => 
+        public override string ToString() =>
             $"Name: {Name}\nManufacturer: {ManufacturerName}\nSugar: {SugarContent}\nWeight: {Weight}\nPrice: {PricePerKilogram}\n" +
-            $"{NutritionalValue}\n{ExpirationDate}";
-
+            $"{NutritionalValue}\n{StartDate}";
     }
 }

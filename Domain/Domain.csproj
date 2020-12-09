@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Products\Characteristics\ExpirationDate.cs" />
     <Compile Include="Products\Characteristics\NutritionalValue.cs" />
     <Compile Include="Products\Confections\CandyBar.cs" />
     <Compile Include="Products\Confections\Characteristics\ChocolateType.cs" />
@@ -50,10 +49,9 @@
     <Compile Include="Products\Confections\Characteristics\Size.cs" />
     <Compile Include="Products\Confections\Characteristics\WaffleType.cs" />
     <Compile Include="Products\Confections\Chocolate.cs" />
-    <Compile Include="Products\Confections\ConfectioneryProduct.cs" />
+    <Compile Include="Products\Confections\ConfectioneryProductBase.cs" />
     <Compile Include="Products\Confections\Lollipop.cs" />
     <Compile Include="Products\Confections\Waffle.cs" />
-    <Compile Include="Products\IProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

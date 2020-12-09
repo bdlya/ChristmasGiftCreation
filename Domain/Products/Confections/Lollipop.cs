@@ -1,15 +1,13 @@
-﻿using GiftContent.Builders.ConfectionBuilders;
-using GiftContent.Products.Confections.Characteristics;
+﻿using Domain.Products.Confections.Characteristics;
 
-namespace GiftContent.Products.Confections
+namespace Domain.Products.Confections
 {
-    public class Lollipop: ConfectioneryProduct
+    public class Lollipop: ConfectioneryProductBase
     {
         public LollipopType LollipopType { get; set; }
-
-        public new static LollipopBuilder CreateBuilder() => new LollipopBuilder();
 
         public override string ToString() => base.ToString() + $"\nLollipop: {LollipopType}";
 
     }
+
 }

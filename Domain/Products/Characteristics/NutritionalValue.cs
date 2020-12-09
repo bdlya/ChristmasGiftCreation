@@ -1,4 +1,4 @@
-﻿namespace GiftContent.Products.Characteristics
+﻿namespace Domain.Products.Characteristics
 {
     public class NutritionalValue
     {
