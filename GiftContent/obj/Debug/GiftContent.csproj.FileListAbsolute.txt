@@ -1,7 +1,0 @@
-D:\.NET\Курсы\Task 1\ChristmasGiftCreation\GiftContent\bin\Debug\GiftContent.exe.config
-D:\.NET\Курсы\Task 1\ChristmasGiftCreation\GiftContent\bin\Debug\GiftContent.exe
-D:\.NET\Курсы\Task 1\ChristmasGiftCreation\GiftContent\bin\Debug\GiftContent.pdb
-D:\.NET\Курсы\Task 1\ChristmasGiftCreation\GiftContent\obj\Debug\GiftContent.csprojAssemblyReference.cache
-D:\.NET\Курсы\Task 1\ChristmasGiftCreation\GiftContent\obj\Debug\GiftContent.csproj.CoreCompileInputs.cache
-D:\.NET\Курсы\Task 1\ChristmasGiftCreation\GiftContent\obj\Debug\GiftContent.exe
-D:\.NET\Курсы\Task 1\ChristmasGiftCreation\GiftContent\obj\Debug\GiftContent.pdb
