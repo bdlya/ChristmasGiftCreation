@@ -17,6 +17,8 @@ namespace ConsoleInterface
 
             Console.WriteLine($"Total weight: {standardChristmasGift.CountWeight()}");
 
+            Console.WriteLine(standardChristmasGift.OrderByManufacturer());
+
             Console.ReadKey();
         }
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,11 @@ namespace Box
 {
     public class Gift
     {
-        public ICollection<ConfectioneryProductBase> Confections { get; }
+        private readonly ICollection<ConfectioneryProductBase> _confections;
 
-        public Gift(ICollection<ConfectioneryProductBase> collection) => Confections = collection;
+        public Gift(ICollection<ConfectioneryProductBase> collection) => _confections = collection;
 
-        public void Add(ConfectioneryProductBase confection) => Confections.Add(confection);
+        public void Add(ConfectioneryProductBase confection) => _confections.Add(confection);
 
         public void AddRange(params ConfectioneryProductBase[] confections)
         {
@@ -20,19 +21,19 @@ namespace Box
                 Add(confection);
         }
 
-        public double CountWeight() => Confections.Sum(x => x.Weight);
-       
+        public double CountWeight() => _confections.Sum(x => x.Weight);
 
+        public Gift OrderByManufacturer() => new Gift(_confections.OrderBy(x => x.ManufacturerName).ToList());
 
         public override string ToString()
         {
             StringBuilder confections = new StringBuilder();
 
-            foreach (var product in Confections)
+            foreach (var product in _confections)
             {
                 confections.Append(product);
             }
-            
+
             return confections.ToString();
         }
     }
