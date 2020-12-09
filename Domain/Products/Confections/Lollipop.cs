@@ -6,7 +6,7 @@ namespace Domain.Products.Confections
     {
         public LollipopType LollipopType { get; set; }
 
-        public override string ToString() => base.ToString() + $"\nLollipop: {LollipopType}";
+        public override string ToString() => base.ToString() + $"\nLollipop: {LollipopType}\n";
 
     }
 

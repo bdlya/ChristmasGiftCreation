@@ -18,7 +18,7 @@ namespace Domain.Products.Confections
         public DateTime StartDate { get; set; }
 
         public override string ToString() =>
-            $"Name: {Name}\nManufacturer: {ManufacturerName}\nSugar: {SugarContent}\nWeight: {Weight}\nPrice: {PricePerKilogram}\n" +
+            $"\nName: {Name}\nManufacturer: {ManufacturerName}\nSugar: {SugarContent}\nWeight: {Weight}\nPrice: {PricePerKilogram}\n" +
             $"{NutritionalValue}\n{StartDate}";
     }
 }

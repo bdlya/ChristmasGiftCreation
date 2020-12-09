@@ -5,3 +5,10 @@ D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\obj\Debug\Conso
 D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\obj\Debug\ConsoleInterface.csproj.CoreCompileInputs.cache
 D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\obj\Debug\ConsoleInterface.exe
 D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\obj\Debug\ConsoleInterface.pdb
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\bin\Debug\Box.dll
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\bin\Debug\Domain.dll
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\bin\Debug\Utils.dll
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\bin\Debug\Box.pdb
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\bin\Debug\Domain.pdb
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\bin\Debug\Utils.pdb
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\ConsoleInterface\obj\Debug\ConsoleInterface.csproj.CopyComplete

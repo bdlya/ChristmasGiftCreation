@@ -6,7 +6,7 @@ namespace Domain.Products.Confections
     {
         public ChocolateType ChocolateType { get; set; }
 
-        public override string ToString() => base.ToString() + $"Chocolate: {ChocolateType}";
+        public override string ToString() => base.ToString() + $"\nChocolate: {ChocolateType}\n";
 
     }
 }

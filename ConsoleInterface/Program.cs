@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Box;
+using Utils.Builders.GiftBox;
 
 namespace ConsoleInterface
 {
@@ -10,6 +12,10 @@ namespace ConsoleInterface
     {
         static void Main(string[] args)
         {
+            Gift standardChristmasGift = new Creator().CreateGift(new StandardGiftBuilder());
+            Console.WriteLine(standardChristmasGift);
+
+            Console.ReadKey();
         }
     }
 }

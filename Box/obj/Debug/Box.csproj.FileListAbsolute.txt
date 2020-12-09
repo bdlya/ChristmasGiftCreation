@@ -1,0 +1,9 @@
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Box\bin\Debug\Box.dll
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Box\bin\Debug\Box.pdb
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Box\bin\Debug\Domain.dll
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Box\bin\Debug\Domain.pdb
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Box\obj\Debug\Box.csprojAssemblyReference.cache
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Box\obj\Debug\Box.csproj.CoreCompileInputs.cache
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Box\obj\Debug\Box.csproj.CopyComplete
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Box\obj\Debug\Box.dll
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Box\obj\Debug\Box.pdb

@@ -8,6 +8,6 @@ namespace Domain.Products.Confections
 
         public WaffleType WaffleType { get; set; }
 
-        public override string ToString() => base.ToString() + $"\nTaste: {Taste}\nWaffle: {WaffleType}";
+        public override string ToString() => base.ToString() + $"\nTaste: {Taste}\nWaffle: {WaffleType}\n";
     }
 }

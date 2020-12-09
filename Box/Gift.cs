@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using Domain.Products.Confections;
 
@@ -24,8 +25,10 @@ namespace Box
             StringBuilder confections = new StringBuilder();
 
             foreach (var product in Confections)
+            {
                 confections.Append(product);
-
+            }
+            
             return confections.ToString();
         }
     }

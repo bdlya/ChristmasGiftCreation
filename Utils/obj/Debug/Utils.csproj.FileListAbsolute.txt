@@ -1,0 +1,11 @@
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Utils\bin\Debug\Utils.dll
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Utils\bin\Debug\Utils.pdb
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Utils\bin\Debug\Box.dll
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Utils\bin\Debug\Domain.dll
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Utils\bin\Debug\Box.pdb
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Utils\bin\Debug\Domain.pdb
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Utils\obj\Debug\Utils.csprojAssemblyReference.cache
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Utils\obj\Debug\Utils.csproj.CopyComplete
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Utils\obj\Debug\Utils.dll
+D:\.NET\Курсы\Task 1\ChristmasGiftCreation\Utils\obj\Debug\Utils.pdb
