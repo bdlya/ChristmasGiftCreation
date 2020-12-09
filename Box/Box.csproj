@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1AA2D115-ADCB-4125-A6D1-F813F224B3F0}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>GiftBox</RootNamespace>
-    <AssemblyName>GiftBox</AssemblyName>
+    <ProjectGuid>{9DB4B566-E5C5-422E-A7D3-8B39C17079BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Box</RootNamespace>
+    <AssemblyName>Box</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,16 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Box\Creator.cs" />
-    <Compile Include="Builders\BoxBuilders\GiftBuilder.cs" />
-    <Compile Include="Box\Gift.cs" />
-    <Compile Include="Builders\BoxBuilders\StandardGiftBuilder.cs" />
-    <Compile Include="Builders\BoxBuilders\UserGiftBuilder.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Creator.cs" />
+    <Compile Include="Gift.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
