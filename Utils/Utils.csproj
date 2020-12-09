@@ -44,7 +44,6 @@
     <Compile Include="Builders\GiftBox\Creator.cs" />
     <Compile Include="Builders\GiftBox\GiftBuilder.cs" />
     <Compile Include="Builders\GiftBox\StandardGiftBuilder.cs" />
-    <Compile Include="Builders\GiftBox\UserGiftBuilder.cs" />
     <Compile Include="Builders\Confection\CandyBarBuilder.cs" />
     <Compile Include="Builders\Confection\ChocolateBuilder.cs" />
     <Compile Include="Builders\Confection\ConfectionBuilderBase.cs" />

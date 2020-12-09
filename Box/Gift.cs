@@ -12,6 +12,13 @@ namespace Box
 
         public void Add(ConfectioneryProductBase confection) => Confections.Add(confection);
 
+        public void AddRange(params ConfectioneryProductBase[] confections)
+        {
+            foreach (var confection in confections)
+                Add(confection);
+        }
+
+
         public override string ToString()
         {
             StringBuilder confections = new StringBuilder();

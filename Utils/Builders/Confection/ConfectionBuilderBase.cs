@@ -46,7 +46,7 @@ namespace Utils.Builders.Confection
             return this;
         }
 
-        public ConfectionBuilderBase<T> SetExpirationDate(DateTime startDate)
+        public ConfectionBuilderBase<T> SetStartDate(DateTime startDate)
         {
             Confection.StartDate = startDate;
             return this;
