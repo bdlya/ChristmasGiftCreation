@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Box;
 using Domain.Confections;
-using Domain.Confections.Characteristics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Utils.Builders.Confection;
 using Utils.Builders.GiftBox;
 
 namespace Testing
