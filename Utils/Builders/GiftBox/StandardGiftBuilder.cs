@@ -1,13 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using Box;
 using Domain.Confections;
 using Domain.Confections.Characteristics;
 using Utils.Builders.Confection;
 
 namespace Utils.Builders.GiftBox
 {
-    public class StandardGiftBuilder : GiftBuilder
+    public class StandardGiftBuilder : IGiftBuilder
     {
-        public override void AddCandyBar()
+        public Gift Gift { get; }
+
+        public StandardGiftBuilder(ICollection<ConfectionBase> collection) => Gift = new Gift(collection);
+
+        public void AddCandyBar()
         {
             CandyBar marsCandyBar = new CandyBarBuilder()
                 .SetGlazing(true)
@@ -34,11 +40,10 @@ namespace Utils.Builders.GiftBox
                 .SetWeight(100)
                 .Build();
 
-
             Gift.AddRange(marsCandyBar, spartakCandyBar);
         }
 
-        public override void AddWaffle()
+        public void AddWaffle()
         {
             Waffle standardWaffle = new WaffleBuilder()
                 .SetTaste("Orange")
@@ -55,7 +60,7 @@ namespace Utils.Builders.GiftBox
             Gift.Add(standardWaffle);
         }
 
-        public override void AddLollipop()
+        public void AddLollipop()
         {
             Lollipop hitLollipop = new LollipopBuilder()
                 .SetLollipopType(LollipopType.Caramel)
@@ -71,7 +76,7 @@ namespace Utils.Builders.GiftBox
             Gift.Add(hitLollipop);
         }
 
-        public override void AddChocolate()
+        public  void AddChocolate()
         {
             Chocolate milkaChocolate = new ChocolateBuilder()
                 .SetChocolateType(ChocolateType.Milk)
@@ -85,6 +90,15 @@ namespace Utils.Builders.GiftBox
                 .Build();
 
             Gift.Add(milkaChocolate);
+        }
+
+        public Gift Build()
+        {
+            AddCandyBar();
+            AddWaffle();
+            AddLollipop();
+            AddChocolate();
+            return Gift;
         }
     }
 }

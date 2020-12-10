@@ -41,8 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Builders\GiftBox\Creator.cs" />
-    <Compile Include="Builders\GiftBox\GiftBuilder.cs" />
+    <Compile Include="Builders\GiftBox\IGiftBuilder.cs" />
     <Compile Include="Builders\GiftBox\StandardGiftBuilder.cs" />
     <Compile Include="Builders\Confection\CandyBarBuilder.cs" />
     <Compile Include="Builders\Confection\ChocolateBuilder.cs" />

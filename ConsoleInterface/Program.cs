@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using Box;
+using Domain.Confections;
 using Utils.Builders.GiftBox;
 
 namespace ConsoleInterface
@@ -8,7 +10,7 @@ namespace ConsoleInterface
     {
         private static void Main(string[] args)
         {
-            Gift standardChristmasGift = new Creator().CreateGift(new StandardGiftBuilder());
+            Gift standardChristmasGift = new StandardGiftBuilder(new List<ConfectionBase>()).Build();
             Console.WriteLine(standardChristmasGift);
 
             Console.WriteLine($"Total weight: {standardChristmasGift.CountWeight()}");
