@@ -25,7 +25,7 @@ namespace Utils.Builders.GiftBox
                 .SetPricePerKilogram(100)
                 .SetStartDate(new DateTime(2020, 1, 1))
                 .SetSugarContent(12)
-                .SetWeight(120)
+                .SetWeight(130)
                 .Build();
             CandyBar spartakCandyBar = new CandyBarBuilder()
                 .SetGlazing(true)
@@ -65,7 +65,7 @@ namespace Utils.Builders.GiftBox
             Lollipop hitLollipop = new LollipopBuilder()
                 .SetLollipopType(LollipopType.Caramel)
                 .SetName("Hit")
-                .SetManufacturerName("Spartak")
+                .SetManufacturerName("Oh no")
                 .SetNutritionalValue(5, 5, 5)
                 .SetPricePerKilogram(100)
                 .SetStartDate(new DateTime(2020, 2, 4))
