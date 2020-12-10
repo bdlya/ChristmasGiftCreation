@@ -52,7 +52,15 @@ namespace Utils.Builders.Confection
             return this;
         }
 
-        public T Build() => Confection;
+        public T Build()
+        {
+            if (Confection.Name == null || Confection.ManufacturerName == null || Confection.Weight == 0 || Confection.SugarContent == 0)
+            {
+                throw new ArgumentException();
+            }
+
+            return Confection;
+        }
     }
 
 }
