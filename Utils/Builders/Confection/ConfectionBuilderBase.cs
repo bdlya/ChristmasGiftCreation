@@ -1,14 +1,14 @@
 ﻿using System;
-using Domain.Products.Characteristics;
-using Domain.Products.Confections;
+using Domain.Confections.Characteristics;
+using Domain.Confections;
 
 namespace Utils.Builders.Confection
 {
-    public abstract class ConfectionBuilderBase<T> where T : ConfectioneryProductBase, new ()
+    public abstract class ConfectionBuilderBase<T> where T : ConfectionBase, new ()
     {
         protected T Confection { get; }
 
-        public ConfectionBuilderBase() => Confection = new T();
+        protected ConfectionBuilderBase() => Confection = new T();
 
         public ConfectionBuilderBase<T> SetName(string name)
         {

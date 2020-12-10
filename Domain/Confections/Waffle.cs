@@ -1,8 +1,8 @@
-﻿using Domain.Products.Confections.Characteristics;
+﻿using Domain.Confections.Characteristics;
 
-namespace Domain.Products.Confections
+namespace Domain.Confections
 {
-    public class Waffle: ConfectioneryProductBase
+    public class Waffle: ConfectionBase
     {
         public string Taste { get; set; }
 

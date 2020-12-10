@@ -1,5 +1,5 @@
-﻿using Domain.Products.Confections;
-using Domain.Products.Confections.Characteristics;
+﻿using Domain.Confections;
+using Domain.Confections.Characteristics;
 
 namespace Utils.Builders.Confection
 {

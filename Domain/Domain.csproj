@@ -41,18 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Products\Characteristics\NutritionalValue.cs" />
-    <Compile Include="Products\Confections\CandyBar.cs" />
-    <Compile Include="Products\Confections\Characteristics\ChocolateType.cs" />
-    <Compile Include="Products\Confections\Characteristics\LollipopType.cs" />
-    <Compile Include="Products\Confections\Characteristics\Nut.cs" />
-    <Compile Include="Products\Confections\Characteristics\Size.cs" />
-    <Compile Include="Products\Confections\Characteristics\WaffleType.cs" />
-    <Compile Include="Products\Confections\Chocolate.cs" />
-    <Compile Include="Products\Confections\ConfectioneryProductBase.cs" />
-    <Compile Include="Products\Confections\Lollipop.cs" />
-    <Compile Include="Products\Confections\Waffle.cs" />
+    <Compile Include="Confections\Characteristics\NutritionalValue.cs" />
+    <Compile Include="Confections\CandyBar.cs" />
+    <Compile Include="Confections\Characteristics\ChocolateType.cs" />
+    <Compile Include="Confections\Characteristics\LollipopType.cs" />
+    <Compile Include="Confections\Characteristics\Nut.cs" />
+    <Compile Include="Confections\Characteristics\Size.cs" />
+    <Compile Include="Confections\Characteristics\WaffleType.cs" />
+    <Compile Include="Confections\Chocolate.cs" />
+    <Compile Include="Confections\ConfectionBase.cs" />
+    <Compile Include="Confections\Lollipop.cs" />
+    <Compile Include="Confections\Waffle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

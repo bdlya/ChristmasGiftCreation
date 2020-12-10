@@ -1,33 +1,36 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Domain.Products.Confections;
+using Domain.Confections;
 
 namespace Box
 {
     public class Gift
     {
-        private readonly ICollection<ConfectioneryProductBase> _confections;
+        private ICollection<ConfectionBase> _confections;
 
-        public Gift(ICollection<ConfectioneryProductBase> collection) => _confections = collection;
+        public Gift(ICollection<ConfectionBase> collection) => _confections = collection;
 
-        public void Add(ConfectioneryProductBase confection) => _confections.Add(confection);
+        public void Add(ConfectionBase confection) => _confections.Add(confection);
 
-        public void AddRange(params ConfectioneryProductBase[] confections)
+        public void AddRange(params ConfectionBase[] confections)
         {
             foreach (var confection in confections)
+            {
                 Add(confection);
+            }
         }
 
         public double CountWeight() => _confections.Sum(x => x.Weight);
 
-        public Gift OrderByManufacturer() => new Gift(_confections.OrderBy(x => x.ManufacturerName).ToList());
+        public void OrderByManufacturer() => _confections = _confections.OrderBy(x => x.ManufacturerName).ToList();
 
-        public Gift FindConfectionsBySugarContent(int from, int to) => 
-            new Gift(_confections.Where(x => x.SugarContent >= from && x.SugarContent <= to).ToList());
+        public ConfectionBase FindConfectionBySugarContent(int from, int to) =>
+            _confections.FirstOrDefault(x => x.SugarContent >= from && x.SugarContent <= to);
 
+        public IEnumerable FindConfectionsBySugarContent(int from, int to) => 
+            _confections.Where(x => x.SugarContent >= from && x.SugarContent <= to);
 
         public override string ToString()
         {

@@ -1,4 +1,4 @@
-﻿namespace Domain.Products.Confections.Characteristics
+﻿namespace Domain.Confections.Characteristics
 {
     public enum Nut
     {

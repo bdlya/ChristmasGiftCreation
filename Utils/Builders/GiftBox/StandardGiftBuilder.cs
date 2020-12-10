@@ -1,6 +1,6 @@
 ﻿using System;
-using Domain.Products.Confections;
-using Domain.Products.Confections.Characteristics;
+using Domain.Confections;
+using Domain.Confections.Characteristics;
 using Utils.Builders.Confection;
 
 namespace Utils.Builders.GiftBox

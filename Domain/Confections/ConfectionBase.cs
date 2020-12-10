@@ -1,14 +1,16 @@
-﻿using Domain.Products.Characteristics;
+﻿using Domain.Confections.Characteristics;
 using System;
 
-namespace Domain.Products.Confections
+namespace Domain.Confections
 {
-    public abstract class ConfectioneryProductBase
+    public abstract class ConfectionBase
     {
         public string Name { get; set; }
+
         public string ManufacturerName { get; set; }
 
         public double SugarContent { get; set; }
+
         public double Weight { get; set; }
 
         public int PricePerKilogram { get; set; }

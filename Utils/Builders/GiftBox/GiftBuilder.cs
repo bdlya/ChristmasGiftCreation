@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Box;
-using Domain.Products.Confections;
+using Domain.Confections;
 
 namespace Utils.Builders.GiftBox
 {
@@ -8,11 +8,14 @@ namespace Utils.Builders.GiftBox
     {
         public Gift Gift { get; }
 
-        public GiftBuilder() => Gift = new Gift(new List<ConfectioneryProductBase>());
+        public GiftBuilder() => Gift = new Gift(new List<ConfectionBase>());
 
         public abstract void AddCandyBar();
+
         public abstract void AddWaffle();
+
         public abstract void AddLollipop();
+
         public abstract void AddChocolate();
     }
 }
