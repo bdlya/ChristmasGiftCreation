@@ -11,7 +11,7 @@ namespace Utils.Builders.GiftBox
     {
         public Gift Gift { get; }
 
-        public StandardGiftBuilder(ICollection<ConfectionBase> collection) => Gift = new Gift(collection);
+        public StandardGiftBuilder() => Gift = new Gift();
 
         public void AddCandyBar()
         {

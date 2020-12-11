@@ -12,7 +12,7 @@ namespace Testing
         [TestMethod]
         public void CountWeightTest()
         {
-            Gift testGift = new StandardGiftBuilder(new List<ConfectionBase>()).Build();
+            Gift testGift = new StandardGiftBuilder().Build();
             double expectedWeight = 610;
             Assert.AreEqual(expectedWeight, testGift.CountWeight());
         }

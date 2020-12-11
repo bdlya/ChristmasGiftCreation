@@ -10,7 +10,7 @@ namespace Box
     {
         private ICollection<ConfectionBase> _confections;
 
-        public Gift(ICollection<ConfectionBase> collection) => _confections = collection;
+        public Gift() => _confections = new List<ConfectionBase>();
 
         public void Add(ConfectionBase confection) => _confections.Add(confection);
 
@@ -26,10 +26,10 @@ namespace Box
 
         public void OrderByManufacturer() => _confections = _confections.OrderBy(x => x.ManufacturerName).ToList();
 
-        public ConfectionBase FindConfectionBySugarContent(int from, int to) =>
+        public ConfectionBase GetFirstConfectionBySugarContent(int from, int to) =>
             _confections.FirstOrDefault(x => x.SugarContent >= from && x.SugarContent <= to);
 
-        public IEnumerable FindConfectionsBySugarContent(int from, int to) => 
+        public IEnumerable GetAllConfectionsBySugarContent(int from, int to) => 
             _confections.Where(x => x.SugarContent >= from && x.SugarContent <= to);
 
         public override string ToString()
